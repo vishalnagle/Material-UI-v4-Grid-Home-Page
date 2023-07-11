@@ -10,6 +10,15 @@ import Header from "./Header";
 import MainFeaturedPost from "./MainFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
 import Footer from "./Footer";
+// Form components
+import CardPayment from "./Form/CardPayment";
+import Home from "./Form/Home";
+import Hotelmgmt from "./Form/Hotelmgmt";
+import JobApp from "./Form/JobApp";
+import Mui from "./Form/Mui";
+import Prof from "./Form/Prof";
+import Profile from "./Form/Profile";
+
 
 const sections = [
   { title: "Technology", url: "https://en.wikipedia.org/wiki/Technology" },
@@ -202,24 +211,33 @@ const darkTheme = createTheme({
 
 export default function Blog() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Header title="Next Wave of Technology" sections={sections} />
-        <main>
-          <MainFeaturedPost post={mainFeaturedTech} />
-          <Grid container spacing={4}>
-            {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
-          </Grid>
-        </main>
-      </Container>
-      <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
-        social={footer.social}
-      />
-    </ThemeProvider>
+    // <ThemeProvider theme={darkTheme}>
+    //   <CssBaseline />
+    //   <Container maxWidth="lg">
+    //     <Header title="Next Wave of Technology" sections={sections} />
+    //     <main>
+    //       <MainFeaturedPost post={mainFeaturedTech} />
+    //       <Grid container spacing={4}>
+    //         {featuredPosts.map((post) => (
+    //           <FeaturedPost key={post.title} post={post} />
+    //         ))}
+    //       </Grid>
+    //     </main>
+    //   </Container>
+    //   <Footer
+    //     title="Footer"
+    //     description="Something here to give the footer a purpose!"
+    //     social={footer.social}
+    //   />
+    // </ThemeProvider>
+    <div>
+    {/* <h1>Form Components</h1> */}
+    {/* <CardPayment/> */}
+    {/* <Home/> */}
+    {/* <Hotelmgmt/> */}
+    {/* <JobApp/> */}
+    {/* <Mui/> */}
+    <Profile/>
+    </div>
   );
 }
